@@ -51,6 +51,21 @@ body {
   line-height: $body_line_height;
 }
 
+// Text
+h1,
+h2,
+h3 {
+  font-weight: $weight_medium;
+  line-height: 1.06;
+  color: $dark;
+  margin-top: 0px;
+}
+
+h1 {
+  font-size: 4rem;
+  margin-bottom: 1.5rem;
+}
+
 // Inline
 a {
   color: $link;
@@ -93,7 +108,10 @@ span {
     display: none;
   }
 }
+<<<<<<< HEAD
 
 h1{
   font-size: 64px;
 }
+=======
+>>>>>>> 72b2f6434af6fcb4dc5de22f06899ad3a2086f2f
