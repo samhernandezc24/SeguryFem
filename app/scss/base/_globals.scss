@@ -21,6 +21,8 @@ html {
   font-size: $body_size;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
+  overflow-x: $body_overflow_x;
+  overflow-y: $body_overflow_y;
   text-rendering: $body_rendering;
   text-size-adjust: 100%;
 }
