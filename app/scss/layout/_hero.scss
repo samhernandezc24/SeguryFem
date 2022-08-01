@@ -1,5 +1,8 @@
 // Main container
 .hero {
+  padding-top: 8.75rem;
+  padding-bottom: 3.375rem;
+
   .container {
     @include desktop() {
       display: flex;
@@ -15,12 +18,20 @@
   }
 
   &__text {
-    padding-top: 8.75rem;
     text-align: center;
     @include desktop() {
       flex: 3;
       order: 1;
       text-align: left;
     }
+  }
+
+  &__info {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-top: 6.563rem;
+    width: 278px;
+    max-width: 100%;
   }
 }
