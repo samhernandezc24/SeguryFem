@@ -11,9 +11,17 @@
   }
 
   &__image {
+    position: relative;
+    left: 145px;
+    top: -65px;
+    transform: rotate(26.32deg);
     @include tablet() {
       flex: 3;
       order: 2;
+    }
+
+    img {
+      width: 500px;
     }
   }
 
@@ -29,9 +37,60 @@
   &__info {
     display: flex;
     align-items: center;
-    gap: 16px;
+    justify-content: space-between;
     margin-top: 6.563rem;
     width: 278px;
     max-width: 100%;
+  }
+
+  &__phone {
+    display: flex;
+    align-items: center;
+
+    i {
+      font-size: 24px;
+      margin-right: 6px;
+    }
+
+    span {
+      color: $dark;
+      letter-spacing: 1px;
+    }
+  }
+
+  &__divider {
+    width: 24px;
+    border: 1px solid $divider_color;
+    transform: rotate(90deg);
+  }
+
+  &__social {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+    > a i {
+      font-size: 22px;
+
+      &.facebook {
+        color: hsl(216, 57%, 55%);
+      }
+
+      &.youtube {
+        color: hsl(0, 100%, 50%);
+      }
+
+      &.instagram {
+        color: hsl(328, 99%, 47%);
+      }
+
+      &.pinterest {
+        color: hsl(351, 100%, 45%);
+      }
+    }
+
+    a {
+      color: $dark;
+    }
   }
 }
