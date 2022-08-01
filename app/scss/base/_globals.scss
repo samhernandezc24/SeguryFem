@@ -74,31 +74,6 @@ span {
   font-style: inherit;
   font-weight: inherit;
 }
-
-<<<<<<< HEAD:app/scss/_globals.scss
-// Flexbox
-.flex {
-  display: flex;
-
-  &-jc-sb {
-    justify-content: space-between;
-  }
-
-  &-jc-c {
-    justify-content: center;
-  }
-
-  &-jc-sa{
-    justify-content: space-around;
-  }
-
-  &-ai-c {
-    align-items: center;
-  }
-}
-
-=======
->>>>>>> dd4fcb12931553c2012e4c998bc1da7dbfea722a:app/scss/base/_globals.scss
 // Visibility
 .hide-for-mobile {
   // hide for tablet and mobile
