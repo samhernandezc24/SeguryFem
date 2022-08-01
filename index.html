@@ -17,26 +17,47 @@
     <!-- Header Navigation -->
     <header class="header">
       <!-- Menu Navigation -->
-      <nav class="flex flex-jc-sb flex-ai-c">
+      <nav
+        class="container is-flex is-justify-content-space-between is-align-items-center"
+      >
+
         <!-- Logo Section -->
         <a href="/" class="header__logo">
-          <img src="images/logo.png" alt="SeguryFem" width="160" />
+          <img src="images/logo.png" alt="SeguryFem" />
         </a>
 
         <!-- Mobile Menu Hamburger -->
-        <a href="#" class="header__menu">
-          <span></span>
-          <span></span>
-          <span></span>
+        <a
+          id="navbarBurger"
+          role="button"
+          class="header__toggle navbar-burger hide-for-desktop"
+          data-target="navBurger"
+        >
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
         </a>
 
-        <div class="header__links">
+        <div class="header__links hide-for-mobile">
           <a href="#">Inicio</a>
           <a href="#">Acerca de</a>
           <a href="#">Productos</a>
           <a href="#">Contáctanos</a>
         </div>
+
+        <a
+          class="button button--primary is-normal header__cta hide-for-mobile"
+          href="#"
+        >
+          Solicitar en línea
+        </a>
       </nav>
+      <div id="navBurger" class="header__menu">
+        <a href="#">Inicio</a>
+        <a href="#">Acerca de</a>
+        <a href="#">Productos</a>
+        <a href="#">Contáctanos</a>
+      </div>
     </header>
     <!--Banner-->
     <div class="">

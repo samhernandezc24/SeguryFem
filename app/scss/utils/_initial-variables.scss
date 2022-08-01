@@ -4,15 +4,17 @@ $grey_darker: hsl(0, 0%, 21%);
 $grey_dark: hsl(0, 0%, 29%);
 $grey: hsl(0, 0%, 48%);
 $grey_light: hsl(0, 0%, 71%);
+$grey-lighter: hsl(0, 0%, 86%);
+$grey-lightest: hsl(0, 0%, 93%);
 $white: hsl(0, 0%, 100%);
 
 $grayish_red: hsl(15, 34%, 74%);
 $light_grayish_orange: hsl(28, 38%, 85%);
 $dark_magenta: hsl(313, 70%, 37%);
-
 $blue: hsl(229, 53%, 53%);
 $purple: hsl(271, 100%, 71%);
 
+// Typography
 $family_sans_serif: 'Poppins', sans-serif;
 
 // 48px
@@ -36,19 +38,24 @@ $weight_medium: 500;
 $weight_semibold: 600;
 $weight_bold: 700;
 
+// Spacing
+$block_spacing: 1.5rem;
+
 // Responsiveness
 // The container horizontal gap, which acts as the offset for breakpoints
-$gap: 32px;
+// 32px
+$gap: 2em;
 
 // 960px, 1152px, and 1344px have been chosen because they are divisible by both 12 and 16
-$tablet: 769px;
+// 769px
+$tablet: 48.0625em;
 // 960px container + 4rem
-$desktop: 960px + (2 * $gap);
+$desktop: 60em + (2 * $gap);
 // 1152px container + 4rem
-$widescreen: 1152px + (2 * $gap);
+$widescreen: 72em + (2 * $gap);
 $widescreen_enabled: true;
 // 1344px container + 4rem
-$fullhd: 1344px + (2 * $gap);
+$fullhd: 84em + (2 * $gap);
 $fullhd_enabled: true;
 $breakpoints: (
   'mobile': (
@@ -88,3 +95,11 @@ $breakpoints: (
     'from': $fullhd,
   ),
 );
+
+// Miscellaneous
+$easing: ease-out;
+$radius_small: 2px;
+$radius: 4px;
+$radius_large: 6px;
+$radius_rounded: 9999px;
+$speed: 300ms;

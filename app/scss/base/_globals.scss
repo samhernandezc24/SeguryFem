@@ -1,29 +1,26 @@
-$body_size: 14px;
+$body_background_color: $scheme-main;
+$body_size: 16px;
+$body_min_width: 300px;
 $body_rendering: optimizeLegibility;
 $body_family: $family_primary;
+$body_overflow_x: hidden;
+$body_overflow_y: scroll;
 
 $body_color: $text;
 $body_font_size: 1em;
 $body_weight: $weight_normal;
 $body_line_height: 1.5;
 
+$small_font_size: 0.875em;
+
+$container_offset: (2 * $gap);
+$container_max_width: $fullhd;
+
 html {
-  font-size: 100%;
-  box-sizing: border-box;
-}
-
-* {
-  &,
-  &::before,
-  &::after {
-    box-sizing: border-box;
-  }
-}
-
-body {
-  margin: 0;
-  padding: 0;
+  background-color: $body_background_color;
   font-size: $body_size;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
   text-rendering: $body_rendering;
   text-size-adjust: 100%;
 }
@@ -54,13 +51,11 @@ body {
   line-height: $body_line_height;
 }
 
+// Inline
 a {
   color: $link;
   cursor: pointer;
   text-decoration: none;
-  &:visited {
-    color: $link_visited;
-  }
   &:hover {
     color: $link_hover;
   }
@@ -71,11 +66,16 @@ img {
   max-width: 100%;
 }
 
+small {
+  font-size: $small_font_size;
+}
+
 span {
   font-style: inherit;
   font-weight: inherit;
 }
 
+<<<<<<< HEAD:app/scss/_globals.scss
 // Flexbox
 .flex {
   display: flex;
@@ -97,11 +97,23 @@ span {
   }
 }
 
+=======
+>>>>>>> dd4fcb12931553c2012e4c998bc1da7dbfea722a:app/scss/base/_globals.scss
 // Visibility
 .hide-for-mobile {
   // hide for tablet and mobile
+  @include mobile() {
+    display: none;
+  }
 }
 
 .hide-for-desktop {
   // hide for desktop viewport widths
+  @include desktop() {
+    display: none;
+  }
+
+  @include tablet() {
+    display: none;
+  }
 }
