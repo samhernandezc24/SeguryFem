@@ -1,6 +1,14 @@
 // Colors
 $black: hsl(0, 0%, 16%);
+$grey: hsl(0, 0%, 48%);
 $white: hsl(0, 0%, 100%);
 
 $light_grayish_orange: hsl(28, 38%, 85%);
 $dark_magenta: hsl(313, 70%, 37%);
+
+// Typography
+$family-sans-serif: 'Poppins', sans-serif;
+$family-monospace: monospace;
+$render-mode: optimizeLegibility;
+
+$size-1: 3rem;
