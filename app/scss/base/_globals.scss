@@ -74,3 +74,23 @@ span {
   font-style: inherit;
   font-weight: inherit;
 }
+
+// Visibility
+.hide-for-mobile {
+  // hide for tablet and mobile
+  @include mobile() {
+    display: none;
+  }
+}
+
+.hide-for-desktop {
+  // hide for desktop viewport widths
+  @include desktop() {
+    display: none;
+  }
+
+  @include tablet() {
+    display: none;
+  }
+}
+
