@@ -15,6 +15,7 @@
   }
 
   &__text {
+    padding-top: 8.75rem;
     text-align: center;
     @include desktop() {
       flex: 3;
