@@ -1,0 +1,108 @@
+$button_color: $text_strong;
+$button_background_color: $scheme_main;
+$button_family: false;
+
+$button_border_color: $border;
+$button_border_width: $control_border_width;
+
+$button_padding_vertical: calc(0.5em - #{$button_border_width});
+$button_padding_horizontal: 1em;
+
+$button_hover_color: $link_hover;
+$button_hover_border_color: $link_hover_border;
+
+$button_responsive_sizes: (
+  'mobile': (
+    'small': (
+      $size_small * 0.75,
+    ),
+    'normal': (
+      $size_small * 0.875,
+    ),
+    'medium': $size_small,
+    'large': $size_normal,
+  ),
+  'tablet-only': (
+    'small': (
+      $size_small * 0.875,
+    ),
+    'normal': (
+      $size_small,
+    ),
+    'medium': $size_normal,
+    'large': $size_medium,
+  ),
+);
+
+// The button sizes use mixins so they can be used at different breakpoints
+@mixin button-small() {
+  &:not(.is-rounded) {
+    border-radius: $radius_small;
+  }
+  font-size: $size_small;
+}
+
+@mixin button-normal() {
+  font-size: $size_normal;
+}
+
+@mixin button-medium() {
+  font-size: $size_medium;
+}
+
+@mixin button-large() {
+  font-size: $size_large;
+}
+
+.button {
+  @extend %control;
+  background-color: $button_background_color;
+  border-color: $button_border_color;
+  border-width: $button_border_width;
+  color: $button_color;
+  cursor: pointer;
+  @if $button_family {
+    font-family: $button_family;
+  }
+  justify-content: center;
+  padding-bottom: $button_padding_vertical;
+  padding-left: $button_padding_horizontal;
+  padding-right: $button_padding_horizontal;
+  padding-top: $button_padding_vertical;
+  text-align: center;
+  white-space: nowrap;
+  // States
+  &:hover {
+    border-color: $button_hover_border_color;
+    color: $button_hover_color;
+  }
+
+  // Sizes
+  &.is-small {
+    @include button-small();
+  }
+
+  &.is-normal {
+    @include button-normal();
+  }
+
+  &.is-medium {
+    @include button-medium();
+  }
+
+  &.is-large {
+    @include button-large();
+  }
+
+  &--primary {
+    background-color: $primary;
+    border-color: transparent;
+    color: $black;
+
+    &:hover {
+      background-color: hsl(15, 29%, 66%);
+      border-color: transparent;
+      color: $black;
+    }
+  }
+}

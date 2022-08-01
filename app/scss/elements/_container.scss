@@ -1,0 +1,46 @@
+// Block Spacing
+.container {
+  flex-grow: 1;
+  margin: 0 auto;
+  position: relative;
+  width: auto;
+
+  &--fluid {
+    max-width: none !important;
+    padding-left: $gap;
+    padding-right: $gap;
+    width: 100%;
+  }
+
+  @include mobile() {
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+  }
+
+  @include tablet() {
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+  }
+
+  @include desktop() {
+    max-width: $desktop - $container_offset;
+    padding-right: 8.4375rem;
+    padding-left: 8.4375rem;
+  }
+
+  @include until-widescreen() {
+    max-width: min($widescreen, $container_max_width) - $container_offset;
+  }
+
+  @include until-fullhd() {
+    max-width: min($fullhd, $container_max_width) - $container_offset;
+  }
+
+  @include widescreen() {
+    max-width: min($widescreen, $container_max_width) - $container_offset;
+  }
+
+  @include fullhd() {
+    max-width: min($fullhd, $container_max_width) - $container_offset;
+  }
+}

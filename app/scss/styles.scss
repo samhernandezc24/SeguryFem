@@ -1,4 +1,5 @@
-@import 'initial-variables';
-@import 'derived-variables';
-@import 'globals';
-@import 'header';
+@import './utils/all';
+@import './base/all';
+@import './elements/all';
+@import './components/all';
+@import './helpers/all';
