@@ -9,7 +9,7 @@
 
   &__image {
     @include tablet() {
-      flex: 2;
+      flex: 3;
       order: 2;
     }
   }
@@ -20,13 +20,6 @@
       flex: 3;
       order: 1;
       text-align: left;
-    }
-
-    h1 {
-      color: #2a2a2a;
-      font-size: 4rem;
-      font-weight: $weight_medium;
-      line-height: 1.15;
     }
   }
 }
