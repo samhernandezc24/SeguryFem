@@ -1,0 +1,33 @@
+$textarea_padding: $control_padding_horizontal;
+$textarea_max_height: 40em;
+$textarea_min_height: 8em;
+
+%input-textarea {
+  @extend %input;
+  box-shadow: $input_shadow;
+  max-width: 100%;
+  width: 100%;
+  &[readonly] {
+    box-shadow: none;
+  }
+}
+
+.input {
+  @extend %input-textarea;
+}
+
+.textarea {
+  @extend %input-textarea;
+  display: block;
+  max-width: 100%;
+  min-width: 100%;
+  padding: $textarea_padding;
+  resize: vertical;
+  &:not([rows]) {
+    max-height: $textarea_max_height;
+    min-height: $textarea_min_height;
+  }
+  &[rows] {
+    height: initial;
+  }
+}

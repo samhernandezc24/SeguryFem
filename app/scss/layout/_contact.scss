@@ -1,0 +1,41 @@
+.contact {
+  background-color: $background;
+  text-align: center;
+
+  &__content {
+    padding-top: 6.25rem;
+    padding-bottom: 6.25rem;
+  }
+
+  &__intro {
+    margin-bottom: 3.75rem;
+  }
+
+  &__row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__form {
+    -webkit-box-ordinal-group: 14;
+    order: 13;
+
+    form {
+      width: 100%;
+      padding: 3rem;
+      text-align: left;
+    }
+  }
+
+  &__form,
+  &__map {
+    position: relative;
+    width: 100%;
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
+  &__group {
+    margin-bottom: 1rem;
+  }
+}

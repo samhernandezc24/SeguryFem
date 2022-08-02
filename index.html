@@ -23,7 +23,7 @@
     />
     <link rel="stylesheet" href="dist/styles.css" />
   </head>
-  <body>
+  <body id="inicio">
     <!-- Header Navigation -->
     <header class="header">
       <!-- Menu Navigation -->
@@ -48,10 +48,10 @@
         </a>
 
         <div class="header__links hide-for-mobile">
-          <a href="#">Inicio</a>
-          <a href="#">Acerca de</a>
-          <a href="#">Productos</a>
-          <a href="#">Contáctanos</a>
+          <a href="#inicio">Inicio</a>
+          <a href="#acerca">Acerca de</a>
+          <a href="#producto">Productos</a>
+          <a href="#contacto">Contáctanos</a>
         </div>
 
         <a
@@ -114,7 +114,7 @@
     </section>
 
     <!-- About Section -->
-    <section class="feature">
+    <section id="acerca" class="feature">
       <div class="feature__content container">
         <div class="feature__intro">
           <h2>¿Por qué elegir a SecuryFem?</h2>
@@ -169,7 +169,7 @@
       </div>
     </section>
     <!-- Products Section -->
-    <section class="products">
+    <section id="producto" class="products">
       <div class="product__content container">
         <div class="product__intro">
           <h2>Nuestros Productos</h2>
@@ -219,7 +219,75 @@
       </div>
     </section>
     <!-- Contact Section -->
-    <section class="contact"></section>
+    <section id="contacto" class="contact">
+      <div class="contact__content container">
+        <div class="contact__intro">
+          <h2>Contáctanos</h2>
+        </div>
+
+        <div class="contact__row">
+          <div class="contact__form is-flex">
+            <form class="form" action="#">
+              <div class="contact__group">
+                <input
+                  class="contact__input input"
+                  type="text"
+                  placeholder="Tú Nombre"
+                />
+              </div>
+              <div class="contact__group">
+                <input
+                  class="contact__input input"
+                  type="text"
+                  placeholder="Tú Correo"
+                />
+              </div>
+              <div class="contact__group">
+                <input
+                  class="contact__input input"
+                  type="text"
+                  placeholder="Asunto"
+                />
+              </div>
+              <div class="contact__group">
+                <textarea
+                  class="contact__textarea textarea"
+                  placeholder="Mensaje"
+                ></textarea>
+              </div>
+              <div class="contact__group">
+                <button class="button button--primary" type="submit">
+                  Enviar Mensaje
+                </button>
+              </div>
+            </form>
+          </div>
+          <div id="map" class="contact__map is-flex"></div>
+        </div>
+      </div>
+    </section>
+    <script>
+      // Initialize and add the map
+      function initMap() {
+        // The location of Tec
+        const $tec = { lat: 18.0245213, lng: -92.9034068 };
+        // The map, centered at Tec
+        const map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 4,
+          center: $tec,
+        });
+        // The marker, positioned at Tec
+        const marker = new google.maps.Marker({
+          position: $tec,
+          map: map,
+        });
+      }
+      window.initMap = initMap;
+    </script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAAs7vS-PQ7SxC4gTNh6QmWd9OKjsQOiJo&callback=initMap&v=weekly"
+      defer
+    ></script>
     <script src="app/js/script.js"></script>
   </body>
 </html>
