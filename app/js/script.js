@@ -1,5 +1,19 @@
 'use strict';
 document.addEventListener('DOMContentLoaded', () => {
+  // Move for a specific part of the page
+  const $anchorElements = getAll('#sf-nav a[href^="#"]');
+
+  if ($anchorElements.length > 0) {
+    $anchorElements.forEach(($anchor) => {
+      $anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth',
+        });
+      });
+    });
+  }
+
   // Get all "navbar-burger" elements
   const $burgers = getAll('.navbar-burger');
 

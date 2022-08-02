@@ -42,6 +42,20 @@
       order: 1;
       text-align: left;
     }
+
+    h1 {
+      @include mobile() {
+        font-size: 3rem;
+      }
+    }
+  }
+
+  &__buttons {
+    a:first-child {
+      @include mobile() {
+        margin-bottom: 1.875rem;
+      }
+    }
   }
 
   &__info {

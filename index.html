@@ -25,7 +25,7 @@
   </head>
   <body id="inicio">
     <!-- Header Navigation -->
-    <header class="header">
+    <header id="sf-nav" class="header">
       <!-- Menu Navigation -->
       <nav
         class="container is-flex is-justify-content-space-between is-align-items-center"
@@ -55,8 +55,8 @@
         </div>
 
         <a
-          class="button button--primary is-normal header__cta hide-for-mobile"
-          href="#"
+          role="button"
+          class="button is-primary is-normal header__cta hide-for-mobile"
         >
           Solicitar en línea
         </a>
@@ -82,10 +82,10 @@
             consigas.
           </p>
           <div class="hero__buttons">
-            <a href="#" class="button button--primary hero__cta"
+            <a href="#" class="button is-primary hero__cta"
               >Solicitar en línea</a
             >
-            <a href="#" class="button hero__cta">Más información</a>
+            <a href="#" class="button is-light hero__cta">Más información</a>
           </div>
           <div class="hero__info">
             <div class="hero__phone">
@@ -115,7 +115,7 @@
 
     <!-- About Section -->
     <section id="acerca" class="feature">
-      <div class="feature__content container">
+      <div class="feature__content container container--pall">
         <div class="feature__intro">
           <h2>¿Por qué elegir a SecuryFem?</h2>
           <p>
@@ -170,7 +170,7 @@
     </section>
     <!-- Products Section -->
     <section id="producto" class="products">
-      <div class="product__content container">
+      <div class="product__content container container--pall">
         <div class="product__intro">
           <h2>Nuestros Productos</h2>
           <p>
@@ -221,7 +221,7 @@
     </section>
     <!-- Contact Section -->
     <section id="contacto" class="contact">
-      <div class="contact__content container">
+      <div class="contact__content container container--pall">
         <div class="contact__intro">
           <h2>Contáctanos</h2>
         </div>
@@ -257,7 +257,7 @@
                 ></textarea>
               </div>
               <div class="contact__group">
-                <button class="button button--primary" type="submit">
+                <button class="button is-primary" type="submit">
                   Enviar Mensaje
                 </button>
               </div>
@@ -269,7 +269,7 @@
     </section>
     <!-- Footer -->
     <footer class="footer">
-      <div class="container">
+      <div class="container container--pall">
         <a href="#" class="footer__logo">
           <img src="/images/logo.png" alt="SeguryFem" />
         </a>
@@ -298,7 +298,7 @@
           <a href="#">Privacidad</a>
         </div>
         <div class="footer__cta">
-          <a class="button button--primary" href="#"> Solicitar en línea </a>
+          <a class="button is-primary" href="#"> Solicitar en línea </a>
         </div>
         <div class="footer__copyright">
           &copy; 2022 SeguryFem. Todos los Derechos Reservados.
