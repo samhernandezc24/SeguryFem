@@ -2,7 +2,7 @@
 
 SeguryFem is a landing page for a university project.
 
-![Screenshot](/images/doc/ui.png)
+![Screenshot](/images/doc/screenshot.png)
 
 - [Live Demo](https://samhernandezc24.github.io/SeguryFem/)
 
