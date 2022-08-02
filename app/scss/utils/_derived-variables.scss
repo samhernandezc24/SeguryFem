@@ -1,0 +1,50 @@
+$primary: $grayish_red;
+
+$dark: hsl(0, 0%, 16%);
+
+$background: $light_grayish_orange;
+
+// General colors
+$scheme_main: $light_grayish_orange;
+$footer_main: #ede9e3;
+
+$background: $white;
+
+$divider_color: $dark_grayish_orange;
+
+$border: $grey_lighter;
+$border_hover: $grey_light;
+$border_light: $grey_lightest;
+$border_light_hover: $grey_light;
+
+// Text colors
+$text: $grey_dark;
+$text_light: $grey;
+$text_strong: $grey_darker;
+
+// Link colors
+$link: $blue;
+$link_visited: $purple;
+
+$link_hover: $grey_darker;
+$link_hover_border: $grey_light;
+
+$link_focus: $grey_darker;
+$link_focus_border: $blue;
+
+$link_active: $grey_darker;
+$link_active_border: $grey_dark;
+
+// Typography
+$family_primary: $family_sans_serif;
+$family_secondary: $family_sans_serif;
+
+$size_small: $size_7;
+$size_normal: $size_6;
+$size_medium: $size_5;
+$size_large: $size_4;
+$size_xlarge: $size_1;
+
+// Effects
+$shadow: 0 0.5em 1em -0.125em rgba($scheme_main, 0.1),
+  0 0px 0 1px rgba($scheme_main, 0.02);

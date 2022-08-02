@@ -1,0 +1,61 @@
+.feature {
+  background: $background url('/images/hero-girls.png') no-repeat center bottom;
+  text-align: center;
+  min-height: 820px;
+
+  @include mobile() {
+    background: none;
+    background-color: $background;
+    min-height: auto;
+  }
+
+  &__content {
+    padding-top: 6.25rem;
+    padding-bottom: 6.25rem;
+  }
+
+  &__intro {
+    margin-bottom: 3.75rem;
+  }
+
+  &__grid {
+    @include tablet() {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 18px;
+    }
+  }
+
+  &__item {
+    padding: 1.5rem;
+    text-align: left;
+
+    @include mobile() {
+      text-align: center;
+    }
+
+    @include tablet() {
+      flex: 0 0 50%;
+    }
+
+    @include desktop() {
+      flex: 1;
+    }
+  }
+
+  &__icon {
+    margin-bottom: 1.875rem;
+  }
+
+  &__title {
+    font-size: 1.25rem;
+    font-weight: $weight_medium;
+    line-height: 1.15;
+    margin-bottom: 1rem;
+  }
+
+  &__description {
+    font-size: 0.875rem;
+    line-height: 1.5;
+  }
+}

@@ -1,12 +1,332 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SecuryFem</title>
-</head>
-<body>
-    SecuryFem
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SeguryFem</title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- BoxIcon & FontAwesome Links For Icons -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="dist/styles.css" />
+  </head>
+  <body id="inicio">
+    <!-- Header Navigation -->
+    <header class="header">
+      <!-- Menu Navigation -->
+      <nav
+        class="container is-flex is-justify-content-space-between is-align-items-center"
+      >
+        <!-- Logo Section -->
+        <a href="/" class="header__logo">
+          <img src="images/logo.png" alt="SeguryFem" />
+        </a>
+
+        <!-- Mobile Menu Hamburger -->
+        <a
+          id="navbarBurger"
+          role="button"
+          class="header__toggle navbar-burger hide-for-desktop"
+          data-target="navBurger"
+        >
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+
+        <div class="header__links hide-for-mobile">
+          <a href="#inicio">Inicio</a>
+          <a href="#acerca">Acerca de</a>
+          <a href="#producto">Productos</a>
+          <a href="#contacto">Contáctanos</a>
+        </div>
+
+        <a
+          class="button button--primary is-normal header__cta hide-for-mobile"
+          href="#"
+        >
+          Solicitar en línea
+        </a>
+      </nav>
+      <div id="navBurger" class="header__menu">
+        <a href="#inicio">Inicio</a>
+        <a href="#acerca">Acerca de</a>
+        <a href="#producto">Productos</a>
+        <a href="#contacto">Contáctanos</a>
+      </div>
+    </header>
+
+    <!--Banner/Hero-->
+    <section class="hero">
+      <div class="container">
+        <div class="hero__image">
+          <img src="images/hand-banner.png" alt="" />
+        </div>
+        <div class="hero__text">
+          <h1>Protege tu vida con nosotros</h1>
+          <p>
+            Cuanto más trabajes por algo, más grande te sentirás cuando lo
+            consigas.
+          </p>
+          <div class="hero__buttons">
+            <a href="#" class="button button--primary hero__cta"
+              >Solicitar en línea</a
+            >
+            <a href="#" class="button hero__cta">Más información</a>
+          </div>
+          <div class="hero__info">
+            <div class="hero__phone">
+              <i class="bx bx-phone"></i>
+              <span>+99123312</span>
+            </div>
+            <div class="hero__divider"></div>
+            <div class="hero__social">
+              <a href="#">
+                <i class="fab fa-facebook-f facebook"></i>
+              </a>
+              <a href="#">
+                <i class="fab fa-youtube youtube"></i>
+              </a>
+              <a href="#">
+                <i class="fab fa-instagram instagram"></i>
+              </a>
+              <a href="#">
+                <i class="fab fa-pinterest-p pinterest"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div></div>
+    </section>
+
+    <!-- About Section -->
+    <section id="acerca" class="feature">
+      <div class="feature__content container">
+        <div class="feature__intro">
+          <h2>¿Por qué elegir a SecuryFem?</h2>
+          <p>
+            Porque demostramos ser dedicados y ofrecer siempre la mejor calidad
+            y mucho estilo en nuestros productos. En SeguryFem también busccamos
+            promover estilos inclusivos y, porsupuesto, darte la seguridad que
+            necesitas y mereces tener.
+          </p>
+        </div>
+        <div class="feature__grid">
+          <div class="feature__item">
+            <div class="feature__icon">
+              <img src="images/icons/circle-layer-icon.svg" alt="" />
+            </div>
+            <div class="feature__title">Integridad</div>
+            <div class="feature__description">
+              Mostrar el más alto nivel de integridad en la forma en que
+              llevamos a cabo nuestros negocios.
+            </div>
+          </div>
+          <div class="feature__item">
+            <div class="feature__icon">
+              <img src="images/icons/scenary-icon.svg" alt="" />
+            </div>
+            <div class="feature__title">Demostración</div>
+            <div class="feature__description">
+              Demostrar una fuerte voluntad de ganar en el mercado.
+            </div>
+          </div>
+          <div class="feature__item">
+            <div class="feature__icon">
+              <img src="images/icons/object-icon.svg" alt="" />
+            </div>
+            <div class="feature__title">Diversidad</div>
+            <div class="feature__description">
+              Promover la diversidad en el lugar en el lugar de trabajo y en la
+              comunidad.
+            </div>
+          </div>
+          <div class="feature__item">
+            <div class="feature__icon">
+              <img src="images/icons/rocket-icon.svg" alt="" />
+            </div>
+            <div class="feature__title">Calidad</div>
+            <div class="feature__description">
+              Aprovechar el poder de la tecnologia para ofrecer una mejor
+              experiencia al cliente.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Products Section -->
+    <section id="producto" class="products">
+      <div class="product__content container">
+        <div class="product__intro">
+          <h2>Nuestros Productos</h2>
+          <p>
+            SeguryFem ofrece una amplia variedad de anillos de distintos
+            materiales, formas y colores, de modo que siempre podrás encontrar
+            algo que se adapte a tu estilo.
+          </p>
+        </div>
+        <div class="product__grid">
+          <div class="product__item">
+            <div
+              class="product__image"
+              style="background-image: url('/images/products/ring1.jpg')"
+            ></div>
+            <div class="product__text">
+              <div class="product__title">Anillo de Gato para autodefensa</div>
+            </div>
+          </div>
+          <div class="product__item">
+            <div
+              class="product__image"
+              style="background-image: url('/images/products/ring2.jpg')"
+            ></div>
+            <div class="product__text">
+              <div class="product__title">Anillos de Onix</div>
+            </div>
+          </div>
+          <div class="product__item">
+            <div
+              class="product__image"
+              style="background-image: url('/images/products/ring3.jpg')"
+            ></div>
+            <div class="product__text">
+              <div class="product__title">Anillos varios personalizados</div>
+            </div>
+          </div>
+          <div class="product__item">
+            <div
+              class="product__image"
+              style="background-image: url('/images/products/ring4.jpg')"
+            ></div>
+            <div class="product__text">
+              <div class="product__title">Anillos metalicos con mecanismos</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contact Section -->
+    <section id="contacto" class="contact">
+      <div class="contact__content container">
+        <div class="contact__intro">
+          <h2>Contáctanos</h2>
+        </div>
+
+        <div class="contact__row">
+          <div class="contact__form is-flex">
+            <form class="form" action="#">
+              <div class="contact__group">
+                <input
+                  class="contact__input input"
+                  type="text"
+                  placeholder="Tú Nombre"
+                />
+              </div>
+              <div class="contact__group">
+                <input
+                  class="contact__input input"
+                  type="text"
+                  placeholder="Tú Correo"
+                />
+              </div>
+              <div class="contact__group">
+                <input
+                  class="contact__input input"
+                  type="text"
+                  placeholder="Asunto"
+                />
+              </div>
+              <div class="contact__group">
+                <textarea
+                  class="contact__textarea textarea"
+                  placeholder="Mensaje"
+                ></textarea>
+              </div>
+              <div class="contact__group">
+                <button class="button button--primary" type="submit">
+                  Enviar Mensaje
+                </button>
+              </div>
+            </form>
+          </div>
+          <div id="map" class="contact__map is-flex"></div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <a href="#" class="footer__logo">
+          <img src="/images/logo.png" alt="SeguryFem" />
+        </a>
+        <div class="footer__social">
+          <a href="#">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="#">
+            <i class="fab fa-youtube"></i>
+          </a>
+          <a href="#">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="#">
+            <i class="fab fa-pinterest-p"></i>
+          </a>
+        </div>
+        <div class="footer__links col1">
+          <a href="#">Acerca de</a>
+          <a href="#">Contacto</a>
+          <a href="#">Productos</a>
+        </div>
+        <div class="footer__links col2">
+          <a href="#">Promociones</a>
+          <a href="#">Ayuda</a>
+          <a href="#">Privacidad</a>
+        </div>
+        <div class="footer__cta">
+          <a class="button button--primary" href="#"> Solicitar en línea </a>
+        </div>
+        <div class="footer__copyright">
+          &copy; 2022 SeguryFem. Todos los Derechos Reservados.
+        </div>
+      </div>
+    </footer>
+    <script>
+      // Initialize and add the map
+      function initMap() {
+        // The location of Tec
+        const $tec = { lat: 18.0245213, lng: -92.9034068 };
+        // The map, centered at Tec
+        const map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 16,
+          center: $tec,
+        });
+        // The marker, positioned at Tec
+        const marker = new google.maps.Marker({
+          position: $tec,
+          map: map,
+        });
+      }
+      window.initMap = initMap;
+    </script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAAs7vS-PQ7SxC4gTNh6QmWd9OKjsQOiJo&callback=initMap&v=weekly"
+      defer
+    ></script>
+    <script src="app/js/script.js"></script>
+  </body>
 </html>

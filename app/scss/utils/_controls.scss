@@ -1,0 +1,30 @@
+$control_radius: $radius;
+$control_radius_small: $radius_small;
+
+$control_border_width: 1px;
+
+$control_height: 2.5em;
+$control_line_height: 1.5;
+
+$control_padding_vertical: calc(0.5em - #{$control_border_width});
+$control_padding_horizontal: calc(0.75em - #{$control_border_width});
+
+@mixin control() {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  align-items: center;
+  border: $control_border_width solid transparent;
+  border-radius: $control_radius;
+  box-shadow: none;
+  display: inline-flex;
+  font-size: $size_normal;
+  height: $control_height;
+  justify-content: flex-start;
+  line-height: $control_line_height;
+  padding-bottom: $control_padding_vertical;
+  padding-left: $control_padding_horizontal;
+  padding-right: $control_padding_horizontal;
+  padding-top: $control_padding_vertical;
+  position: relative;
+  vertical-align: top;
+}
