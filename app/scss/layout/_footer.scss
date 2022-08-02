@@ -32,6 +32,10 @@ $footer_padding: 2.5rem;
       grid-area: logo;
     }
 
+    @include mobile() {
+      margin-bottom: 1.875rem;
+    }
+
     img {
       width: 8.8125rem;
     }
@@ -41,6 +45,10 @@ $footer_padding: 2.5rem;
     @include desktop() {
       grid-area: social;
       align-self: end;
+    }
+
+    @include mobile() {
+      margin-bottom: 1.875rem;
     }
 
     a {
@@ -71,6 +79,10 @@ $footer_padding: 2.5rem;
     }
 
     &.col2 {
+      @include mobile() {
+        margin-bottom: 1.875rem;
+      }
+
       @include tablet() {
         margin-bottom: 1.875rem;
       }
@@ -95,6 +107,12 @@ $footer_padding: 2.5rem;
       grid-area: cta;
       text-align: right;
       justify-self: end;
+    }
+
+    a.button {
+      @include mobile() {
+        margin-bottom: 1.875rem;
+      }
     }
   }
 

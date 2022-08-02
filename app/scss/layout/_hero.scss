@@ -3,6 +3,11 @@
   padding-top: 8.75rem;
   padding-bottom: 3.375rem;
 
+  @include mobile() {
+    padding-top: 4.375rem;
+    padding-bottom: 4.375rem;
+  }
+
   .container {
     @include desktop() {
       display: flex;
@@ -15,6 +20,11 @@
     left: 145px;
     top: -65px;
     transform: rotate(26.32deg);
+
+    @include mobile() {
+      display: none;
+    }
+
     @include tablet() {
       flex: 3;
       order: 2;
@@ -41,6 +51,10 @@
     margin-top: 6.563rem;
     width: 278px;
     max-width: 100%;
+
+    @include mobile() {
+      margin: 6.563rem auto 0 auto;
+    }
   }
 
   &__phone {
