@@ -263,7 +263,6 @@
               </div>
             </form>
           </div>
-          <div id="map" class="contact__map is-flex"></div>
         </div>
       </div>
     </section>
@@ -271,7 +270,7 @@
     <footer class="footer">
       <div class="container container--pall">
         <a href="#" class="footer__logo">
-          <img src="/images/logo.png" alt="SeguryFem" />
+          <img src="./images/logo.png" alt="SeguryFem" />
         </a>
         <div class="footer__social">
           <a href="#">
@@ -305,28 +304,6 @@
         </div>
       </div>
     </footer>
-    <script>
-      // Initialize and add the map
-      function initMap() {
-        // The location of Tec
-        const $tec = { lat: 18.0245213, lng: -92.9034068 };
-        // The map, centered at Tec
-        const map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 16,
-          center: $tec,
-        });
-        // The marker, positioned at Tec
-        const marker = new google.maps.Marker({
-          position: $tec,
-          map: map,
-        });
-      }
-      window.initMap = initMap;
-    </script>
-    <script
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAAs7vS-PQ7SxC4gTNh6QmWd9OKjsQOiJo&callback=initMap&v=weekly"
-      defer
-    ></script>
     <script src="app/js/script.js"></script>
   </body>
 </html>
